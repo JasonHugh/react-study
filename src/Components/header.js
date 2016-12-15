@@ -17,7 +17,8 @@ var styles = {
 		borderBottom: '1px solid #eee',
 		position: 'fixed',
 		left: 0,
-		top: 0
+		top: 0,
+		backgroundColor: '#fff'
 	},
 	title: {
 		fontSize: '20px',
