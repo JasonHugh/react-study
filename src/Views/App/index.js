@@ -53,6 +53,9 @@ class App extends React.Component {
  					<div className='box-bottom'>
 						<h3>旅行笔记</h3>
 						<h3 className='box-bottom-date'>12月16日 -- 12月18日</h3>
+						<h4 className='sub-box'>费用说明<br/>&nbsp;AA</h4>
+						<h4 className='sub-box'>人数限制<br/>&nbsp;1人</h4>
+						<h4 className='sub-box'>性别限制<br/>&nbsp;女</h4>
  					</div>
  					
  				</div>

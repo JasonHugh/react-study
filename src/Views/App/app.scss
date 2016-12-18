@@ -2,14 +2,25 @@
 	position:absolute;
 	width:300px;
 	top:200px;
+	h3,h4{
+		color:#fff;
+		position:relative
+	}
 	h3{
 		text-align:center;
-		color:#fff;
 		left:-3px;
 		margin-top: 5px;
-		position:relative
 	}
 	.box-bottom-date{
 		margin-top: 20px;
+	}
+	.sub-box{
+		font-size: 13px;
+		top:15px;
+		left: 45px;
+		line-height:25px;
+		display: inline-block;
+		margin-right: 22px;
+		font-weight: normal
 	}
 }
