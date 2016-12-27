@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
 
 export default class HeaderComponent extends Component {
+	_title() {
+		if (this.props.title) {
+			return this.props.title;
+		}else {
+			return "React Study";
+		}
+	}
 	render() {
 		return (
 			<div style={styles.header}>
-				<h1 style={styles.title}>React Study</h1>
+				<h1 style={styles.title}>{this._title()}</h1>
 			</div>
 		)
 	}
