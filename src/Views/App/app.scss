@@ -1,4 +1,4 @@
-.box-bottom{
+.card-bottom{
 	position:absolute;
 	width:300px;
 	top:200px;
@@ -11,10 +11,10 @@
 		left:-3px;
 		margin-top: 5px;
 	}
-	.box-bottom-date{
+	.card-bottom-date{
 		margin-top: 20px;
 	}
-	.sub-box{
+	.sub-card{
 		font-size: 13px;
 		top:15px;
 		left: 45px;
@@ -22,5 +22,20 @@
 		display: inline-block;
 		margin-right: 22px;
 		font-weight: normal
+	}
+}
+.box-bottom{
+	border-top:1px solid #aaa;
+	height:40px;
+	width:100%;
+	display:flex;
+	flex-decoration:row;
+	.box-sub{
+		flex: 1;
+		text-align:center;
+		line-height: 40px
+	}
+	.box-sub:active{
+		background: #ddd
 	}
 }

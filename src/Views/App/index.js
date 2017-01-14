@@ -50,14 +50,19 @@ class App extends React.Component {
  					<p style={{ overflow:'hidden',color:'#eee',width:'240px',height:'110px',padding:'5px',margin:'5px auto',fontSize:'14px',lineHeight:'20px',backgroundColor:'rgba(0, 0, 0, 0.2)',borderRadius:'10px'}}>
  						背起行囊，跨过山河湖海。 又一年的烈日与寒风， 见证了你在路上的悲喜。 
  					</p>
- 					<div className='box-bottom'>
+ 					<div className='card-bottom'>
 						<h3>旅行笔记</h3>
-						<h3 className='box-bottom-date'>12月16日 -- 12月18日</h3>
-						<h4 className='sub-box'>费用说明<br/>&nbsp;AA</h4>
-						<h4 className='sub-box'>人数限制<br/>&nbsp;1人</h4>
-						<h4 className='sub-box'>性别限制<br/>&nbsp;女</h4>
+						<h3 className='card-bottom-date'>12月16日 -- 12月18日</h3>
+						<h4 className='sub-card'>费用说明<br/>&nbsp;AA</h4>
+						<h4 className='sub-card'>人数限制<br/>&nbsp;1人</h4>
+						<h4 className='sub-card'>性别限制<br/>&nbsp;女</h4>
  					</div>
  					
+ 				</div>
+ 				<div className='box-bottom'>
+ 					<div className='box-sub'><i className='iconfont icon-liuyan'></i></div>
+ 					<div className='box-sub'><i className='iconfont icon-liuyan'></i></div>
+ 					<div className='box-sub'><i className='iconfont icon-liuyan'></i></div>
  				</div>
  			</li>
 		)
@@ -125,7 +130,7 @@ class App extends React.Component {
          		<ul style={styles.list}>
 	         		{this._getRows()}
          		</ul>
-         		<FooterComp />
+         		<FooterComp active='1'/>
          	</div>
       	);
    	}
@@ -143,7 +148,7 @@ var styles = {
 		width:'100%',
 		backgroundColor: '#fff',
 		marginTop:'10px',
-		padding: '10px 0'
+		paddingTop: '10px'
 	},
 	userhead: {
 		width: '40px',

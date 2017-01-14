@@ -10,17 +10,18 @@ export default class FooterComponent extends Component {
         this.state = {
         	text: [this.text[0][0],this.text[1][0],this.text[2][0],this.text[3][0]]
         }
+        this.state.text[this.props.active-1] = this.text[this.props.active-1][1]
     }
 
 	render() {
 
 		return (
 			<div style={styles.footer}>
-				<div style={styles.navIcon}><i className={"iconfont "+this.state.text[0]} onClick={this.handleIconClick.bind(this,0)}></i></div>
+				<div style={styles.navIcon}><a href="/#"><i className={"iconfont "+this.state.text[0]} onClick={this.handleIconClick.bind(this,0)}></i></a></div>
 				<div style={styles.navIcon}><i className={"iconfont "+this.state.text[1]} onClick={this.handleIconClick.bind(this,1)}></i></div>
 				<div style={styles.navIcon}><i className="iconfont icon-jiahao1 icon-add"></i></div>
 				<div style={styles.navIcon}><i className={"iconfont "+this.state.text[2]} onClick={this.handleIconClick.bind(this,2)}></i></div>
-				<div style={styles.navIcon}><i className={"iconfont "+this.state.text[3]} onClick={this.handleIconClick.bind(this,3)}></i></div>
+				<div style={styles.navIcon}><a href="/#/my"><i className={"iconfont "+this.state.text[3]} onClick={this.handleIconClick.bind(this,3)}></i></a></div>
 			</div>
 		)
 	}

@@ -8,7 +8,7 @@ export default class My extends React.Component {
       	return (
          	<div style={{display: 'flex',flex: 1,backgroundColor: '#eee'}}>
          		<HeaderComp title='我的' />
-         		<FooterComp />
+         		<FooterComp active='4' />
          	</div>
       	);
    	}
